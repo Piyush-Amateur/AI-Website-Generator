@@ -77,10 +77,10 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`🚀 Smart Genesis Backend running on port ${PORT}`);
-    console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`🔗 Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
-    console.log(`✅ Health check: http://localhost:${PORT}/health`);
+    console.log(` Smart Genesis Backend running on port ${PORT}`);
+    console.log(` Environment: ${process.env.NODE_ENV || 'development'}`);
+    console.log(` Client URL: ${process.env.CLIENT_URL || 'http://localhost:5173'}`);
+    console.log(` Health check: http://localhost:${PORT}/health`);
 });
 
 // Graceful shutdown
